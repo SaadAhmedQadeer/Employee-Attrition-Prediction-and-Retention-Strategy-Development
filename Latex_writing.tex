@@ -1,0 +1,101 @@
+\documentclass[12pt, a4paper]{article}
+
+%--- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\usepackage{graphicx}
+\usepackage{booktabs} 
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{mathpazo} 
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{caption}
+
+%--- Header Configuration ---
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\fancyhf{} 
+\fancyhead[C]{Turnover Risk Prediction: Advanced Analytics for Human Resources} 
+\fancyfoot[C]{\thepage} 
+\renewcommand{\headrulewidth}{0.4pt} 
+
+%--- Formatting ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=darkblue
+}
+
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\definecolor{accentblue}{RGB}{70, 130, 180}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{accentblue}}{\thesubsection}{1em}{}
+
+\onehalfspacing
+
+%--- Title Page Data ---
+\title{\textbf{\Huge Predicting Employee Turnover Using Ensemble Machine Learning} \\ \vspace{0.5em} \Large A Machine Learning Approach to Reducing Turnover}
+\author{\textbf{Saad Ahmed Qadeer} \\ }
+\date{}
+
+\begin{document}
+
+%--- Title Page ---
+\maketitle
+\thispagestyle{empty} 
+\begin{abstract}
+\noindent \textbf{Executive Summary:} This project analyzed employee data to predict turnover and identify key factors contributing to employee attrition. We developed and compared multiple predictive models including logistic regression, decision trees, and random forest classifiers. The analysis revealed that employee departures are primarily driven by excessive workload, lack of recognition, and inadequate work-life balance. The final random forest model achieved \textbf{96.2\% accuracy} with strong predictive performance across all metrics, providing actionable insights for HR interventions.
+\end{abstract}
+\newpage
+
+%--- Table of Contents ---
+\tableofcontents
+\newpage
+
+%--- Headings and Subheadings ---
+
+\section{Project Overview}
+\subsection{Business Problem}
+\subsection{Objectives}
+
+\section{Data Understanding}
+\subsection{Dataset Overview}
+\subsection{Data Cleaning and Preparation}
+
+\section{Exploratory Data Analysis}
+\subsection{Descriptive Statistics}
+\subsection{Key Visualizations and Insights}
+
+\section{Model Development}
+\subsection{Model Selection Rationale}
+\subsection{Feature Engineering \& Training}
+
+\section{Model Results and Evaluation}
+\subsection{Performance Comparison}
+\subsection{Feature Importance Analysis}
+\subsection{Decision Path Analysis}
+
+\section{Conclusions and Recommendations}
+\subsection{Key Findings}
+\subsection{Strategic Recommendations}
+\subsection{Implementation Priorities}
+\subsection{Measuring Success}
+
+\newpage
+\appendix
+\section{Technical Appendix}
+\subsection{Technologies Used}
+\subsection{Final Model Hyperparameters}
+\subsection{Limitations}
+
+\end{document}
